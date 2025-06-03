@@ -8,6 +8,8 @@ __pycache__/
 
 # Ignore model files
 *.pt
+*.pkl
+*.pth
 
 # Ignore dataset files (optional if you don’t want to push them)
 #*.csv

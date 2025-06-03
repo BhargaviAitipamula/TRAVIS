@@ -1,23 +1,38 @@
-# AI Help Desk for Visually Impaired Agents
+# TRAVIS: Transformer-Based Help Desk for Visually Impaired Agents
 
-This project implements a transformer-based system designed to help visually impaired banking agents.
+TRAVIS (Transformer-based Assistance System) is an AI-powered help desk application designed to assist **visually impaired bank service agents** by processing user queries using **Transformer-based models**. It includes:
+
+- A **Query-Response model** for understanding and answering customer queries.
+- A **Translation model** for converting between English and Telugu.
+- A combined **API layer** to integrate both models into a deployable service.
+- A **Frontend** interface for user interaction.
+
+---
 
 ## 📂 Project Structure
 
-- `models/query_response/`: Transformer for query-based responses
-- `models/translation/`: English-Telugu translation model
-- `backend/`: API code to connect models with frontend
-- `frontend/`: UI for interaction
-
-## 🚀 Tech Stack
-
-- PyTorch (models)
-- Node.js / Express (backend)
-- React (frontend)
-- Google Colab (training)
-
-## 🧠 Features
-
-- Contextual query answering
-- Language translation
-- Voice-assisted responses
+```bash
+TRAVIS/
+├── backend/                         # API logic (Flask/Node.js/etc.)
+│   └── api.py                       # Connects both models and handles API endpoints
+│
+├── models/
+│   ├── query_response/             # Query-response model code and artifacts
+│   │   ├── query_model.ipynb
+│   │   └── dataset.json
+│   │      
+│   │
+│   ├── translation/                # English-Telugu translation model
+│   │   ├── translation_model.ipynb
+│   │   └── dataset.txt
+│   │
+│   └── combined/                   # Integrated logic for both models
+│       └── TRAVISTestingFinal.ipynb
+│
+├── frontend/                       # React or basic HTML/CSS frontend
+│   └── src/
+│       └── App.jsx                 # User interface
+│
+├── .gitignore
+├── .gitattributes
+└── README.md                       # You're reading this
